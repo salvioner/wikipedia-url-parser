@@ -5,7 +5,8 @@ defaultLang = "en"
 def viewlang():
     global languages
     print "Available languages until now are:\n"
-    print languages[i] for i in range(len(languages))
+    for i in range(len(languages)):
+        print languages[i]
     """ FOR FURTHER EDITING: please update the message below when adding new languages """
     print "Currently supporting languages from wikis with more that 1M articles, as found at\nhttps://meta.wikimedia.org/wiki/List_of_Wikipedias#1_000_000.2B_articles"
     print "If you want to contribute, please contact salvioner on GitHub"
